@@ -100,7 +100,7 @@ class ius (
 
 ) inherits ius::params {
 
-  if $::osfamily == 'RedHat' and $::operatingsystem =~ /RedHat|CentOS/ {
+  if $::osfamily == 'RedHat' and $::operatingsystem =~ /RedHat|CentOS|OracleLinux/ {
     
     include $epel_class
 

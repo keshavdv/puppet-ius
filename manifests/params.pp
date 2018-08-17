@@ -14,6 +14,9 @@ class ius::params {
     'RedHat': {
       $ius_os = 'el'
     }
+    'OracleLinux': {
+      $ius_os = 'el'
+    }
     default: {
       notice("${::operatingsystem} is not supported by this module.")
     }
